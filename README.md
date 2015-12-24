@@ -11,7 +11,7 @@ simba 依赖于 Node.js 环境，需要使用 git 客户端检出代码。
 由于目前 simba 还是内部项目没有开源，不适合发布至 npm ，目前只能在内网通过以下方式安装：
 
 	cd /temp # 进入某临时目录
-	git clone https://fed.cnsuning.com/simbajs/simba.git  # 使用 git 客户端 clone 代码
+	git clone https://github.com/xinjingfen/automationTool.git  # 使用 git 客户端 clone 代码
 	cd simba  # 进入代码目录
 	npm install  # 安装依赖
 	npm link  # 链接至全局
