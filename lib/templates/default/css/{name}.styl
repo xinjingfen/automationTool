@@ -1,0 +1,64 @@
+body,html
+  margin:0
+  padding:0
+
+-pos(type, args)
+  i = 0
+  position: unquote(type)
+  {args[i]}: args[i + 1] is a 'unit' ? args[i += 1] : 0
+  {args[i += 1]}: args[i + 1] is a 'unit' ? args[i += 1] : 0
+
+absolute()
+  -pos('absolute', arguments)
+
+fixed()
+  -pos('fixed', arguments)
+
+#prompt
+  absolute: top 150px left 5px
+  width: 400px
+  background : red
+  border:1px solid #333
+  padding :10px
+  margin-left: -(@width / 200)
+  left:100px
+  margin-top: 100px
+  color:#ffffff
+
+#logo
+  fixed: top left
+
+header
+  #logo
+    border:1px solid red
+    background: url('images/index-bg.png') no-repeat
+    display: flex
+
+.demo1
+  font 14px/1.5 Helvetica, arial, sans-serif
+  button
+  button.button
+  input[type='button']
+  input[type='submit']
+    border-radius 5px
+
+.demo1
+  .test,div
+    font-size:14px
+
+border-radius(val)
+  -webkit-border-radius: val
+  -moz-border-radius: val
+  border-radius: val
+
+button
+  border-radius(5px);
+
+@keyframes pulse
+  0%
+    background-color red
+    transform scale(1.0) rotate(0deg)
+  33%
+    background-color blue
+    -webkit-transform scale(1.1) rotate(-5deg)
+

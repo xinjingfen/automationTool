@@ -1,0 +1,12 @@
+{
+  "server": {
+    "localServerPort": "3000",    //本地服务器端口
+    "isOpenAuto": true           //是否自动打开浏览器
+  },
+  "build":{
+    "uglify":{		   			//JS压缩
+      "mangle": true,  			//默认：true 是否修改变量名
+      "compress": true 			//默认：true 是否完全压缩
+    }
+  }
+}
