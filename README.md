@@ -1,14 +1,8 @@
 # simbajs
 
-## 项目介绍
-
-simbajs 是一套前端自动化工具集合，目的是为了解决前端开发过程中的一系列问题，如：脚手架、自动刷新、预编译、调试、打包、数据模拟等。simba ['sɪmbɑ:] 是狮子王辛巴的英文名，寓意为百兽之王，同时也与我司吉祥物相符。
-
-
 ## 安装
 	
 simba 依赖于 Node.js 环境，需要使用 git 客户端检出代码。
-由于目前 simba 还是内部项目没有开源，不适合发布至 npm ，目前只能在内网通过以下方式安装：
 
 	cd /temp # 进入某临时目录
 	git clone https://github.com/xinjingfen/automationTool.git  # 使用 git 客户端 clone 代码
